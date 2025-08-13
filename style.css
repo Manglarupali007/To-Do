@@ -99,3 +99,53 @@ li {
 li:hover {
   background-color: #e0dcf9;
 }
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #d3d3d3 !important;
+  color: #777;
+}
+
+
+.btn-group {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+li {
+  position: relative;
+  padding-right: 80px; 
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  color: #4c00ff;
+}
+
+.delete-btn:hover {
+  color: #ff3c3c;
+}
