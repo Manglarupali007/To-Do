@@ -22,3 +22,80 @@ body {
   text-align: center;
   animation: pop 0.6s ease-out;
 }
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #764ba2;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102,126,234,0.3);
+}
+
+button {
+  padding: 12px 15px;
+  background: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a3796;
+}
+
+ul {
+  margin-top: 25px;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  background: #f4f4f4;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  animation: slideIn 0.4s ease-out;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #e0dcf9;
+}
